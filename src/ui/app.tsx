@@ -270,6 +270,15 @@ export function App() {
             <br></br>
             {!hasVoted? <VoteDropdown /> : <ThanksForVoting />}
             <hr />
+            <div>
+                <b>Donations</b>
+                <br />
+                To donate Ether to your candidate, open <a href="https://force-bridge-test.ckbapp.dev/bridge/Ethereum/Nervos?xchain-asset=0x0000000000000000000000000000000000000000">Force Bridge</a>,
+                <br />and at the Recipient field, use the Candidate's deposit donation from below:
+                <br /><br />
+                { candidates?.length>0?candidates.map(element=><div className="scrollable"><b>{element["name"]}:</b> {element["donations"]}<br/></div>):'no'}
+            </div>
+            <hr />   
  
         </>
     );
