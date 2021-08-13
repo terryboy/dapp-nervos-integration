@@ -307,7 +307,7 @@ export function App() {
 
             <hr />
             <button
-                onClick={() => setExistingContractAddress("0xd5A32a5c1d213bb19702DAacac642899746bEa1D")}
+                onClick={() => setExistingContractAddress("0xD9B7039cAa7e420d5B73457a91Ddcb9b29721863")}
             >
                 {candidates?.length>0 ? 'Reload data' : 'Load data'}
             </button>
